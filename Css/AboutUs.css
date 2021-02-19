@@ -1,0 +1,216 @@
+
+*{
+	
+	box-sizing: border-box;
+	text-align: justify;
+	font-family: Roboto, sans-serif;
+	outline: none;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: #181818;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#wrapper{
+	position: relative;
+	left: 4%;
+	margin: auto;
+	padding: auto;
+	max-width: 1200px;
+	height: 1200px;
+	
+	
+}
+/*kich thuoc cac phan */
+#header{
+	float: none;
+	text-align: center;
+	height: 150px;
+	
+}
+
+#nav{
+	height: 50px;
+	
+	
+}
+
+#content{
+    height: 700px;
+    width: 100%;
+
+}
+
+#footer{
+	height: 292px;
+
+}
+/*---------------------*/
+/*header */
+	#header img{
+		
+		max-width: 100%;
+	}
+
+/*---------------------*/
+
+/*menu*/
+#nav ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	letter-spacing: 3px;
+}
+#nav li {
+	transition: 400ms;
+	transform: skew(-20deg);
+	
+}
+
+#nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	transform: skew(20deg);
+	color: white;
+	line-height: 10px;
+	
+	
+}
+
+#nav li:hover{
+	transition: 400ms;
+	background-color: #f8f406;
+	
+}
+#nav li a:hover{
+	transition: 400ms;
+	color: black;
+	font-weight: bold;
+	
+	
+}
+/*---------------------*/
+
+/*phan content */
+#content{
+	display: block;
+	color: whitesmoke;
+	height: 700px;
+	width: 100%;
+}
+#content blockquote {
+    
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font: 800 46px/53px Roboto, serif;
+    margin:0;
+    border: none;
+    position: relative;
+    color: #fff;
+}
+  
+
+  #content blockquote:before {
+    color: #fff;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.5em;
+    margin-right: 0.25em;
+    vertical-align: -0.3em;
+    font: 800 163px / 163px Roboto, serif;
+    
+}
+  #content blockquote p {
+    display: inline;
+  }
+
+    /*phan content-inside */
+   #content-inside{
+       border-bottom: 2px solid yellow;
+       height: 50px;
+       padding: 0;
+       margin: 0;
+   }
+   #content-inside p{
+       background-color: yellow;
+       width: fit-content;
+       text-transform: uppercase;
+       font-size: 4em;
+       padding: 0px 8px;
+       color: black;
+       font: 800 46px/53px Roboto, serif;
+       transform: skew(-20deg);
+   }
+   #content-inside p:hover{
+       color: gray
+   }
+    /*---------------------*/
+/*phan class h1 va p2 */
+   .H1{
+       font-weight: bold;
+       font: 800 20px/53px Roboto, serif;
+       opacity: 0.8;
+   }
+   .p2{
+       letter-spacing: 2px;
+       word-spacing: 1.2;
+       opacity: .5;
+   }
+  /*---------------------*/
+/*phan footer */
+
+#footer{
+	color: white;
+	
+}
+.footer2{
+	width: 398px;
+	float: left;
+	
+}
+.footer2 p{
+	opacity: 0.5;
+	margin-left: 10px;
+}
+.footer2 a{
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 5px;
+	background-color:rgb(128, 128, 128);
+	border: 1px solid rgb(92, 92, 92);
+	text-align: center;
+	font-variant: small-caps;
+	color:white;
+}
+
+.footer2 a:hover{
+	color: rgba(236, 122, 28, 0.952);
+	transition: .5s;
+}
+#footer2{
+	height: 30px;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5	;
+	border-radius: 10px;
+	background-color: rgb(153, 216, 245);
+	color: grey;
+}
+#footer2 p{
+	text-align: center;
+	font-variant: small-caps;
+	font-size: larger;
+}

@@ -1,0 +1,128 @@
+*{
+	
+	box-sizing: border-box;
+	text-align: justify;
+	font-family: Roboto, sans-serif;
+	outline: none;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: #181818;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#wrapper{
+	position: relative;
+	left: 4%;
+	margin: auto;
+	padding: auto;
+	max-width: 1200px;
+	height: 1200px;
+	
+	
+}
+/*kich thuoc cac phan */
+/*kich thuoc cac phan */
+#header{
+	float: none;
+	text-align: center;
+	height: 150px;
+	max-width: 100%
+	
+}
+
+#nav{
+	height: 50px;
+	max-width: 100%
+	
+	
+}
+
+#content{
+	
+	max-width: 100%
+
+
+}
+/*---------------------*/
+/*header */
+	#header img{
+		
+		max-width: 100%;
+	}
+
+/*---------------------*/
+
+/*menu*/
+#nav ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	letter-spacing: 3px;
+}
+#nav li {
+	transition: 400ms;
+	transform: skew(-20deg);
+
+}
+
+
+
+#nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	transform: skew(20deg);
+	color: white;
+	line-height: 10px;
+	
+	
+}
+
+
+#nav li:hover{
+	transition: 400ms;
+	background-color: #f8f406;
+	
+}
+#nav li a:hover{
+	transition: 400ms;
+	color: black;
+	font-weight: bold;
+	
+	
+}
+/*---------------------*/
+#content{
+	
+	background-color:  rgb(54, 54, 54);
+	
+	width: 100%;
+}
+
+#content img{
+   position: relative;
+   left: 15%;
+    margin-top: 5px;
+}
+
+#content h1{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+#content p{
+	text-indent: 30px;
+	color: white;
+	opacity: .6;
+}
+/*---------------------*/

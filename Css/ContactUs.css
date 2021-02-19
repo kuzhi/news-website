@@ -1,0 +1,240 @@
+*{
+	
+	box-sizing: border-box;
+	text-align: justify;
+	font-family: Roboto, sans-serif;
+	outline: none;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: #181818;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#wrapper{
+	position: relative;
+	left: 4%;
+	margin: auto;
+	padding: auto;
+	max-width: 1200px;
+	height: 1200px;
+	
+	
+}
+/*kich thuoc cac phan */
+#header{
+	float: none;
+	text-align: center;
+	height: 150px;
+	max-width: 100%
+	
+}
+
+#nav{
+	height: 50px;
+	max-width: 100%
+	
+	
+}
+
+#content{
+	height: 700px;
+	max-width: 100%
+
+}
+
+#footer{
+	height: 292px;
+	max-width: 100%
+
+}
+/*---------------------*/
+/*header */
+	#header img{
+		
+		max-width: 100%;
+	}
+
+/*---------------------*/
+
+/*menu*/
+#nav ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	letter-spacing: 3px;
+}
+#nav li {
+	transition: 400ms;
+	transform: skew(-20deg);
+
+}
+
+
+
+#nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	transform: skew(20deg);
+	color: white;
+	line-height: 10px;
+	
+	
+}
+
+
+#nav li:hover{
+	transition: 400ms;
+	background-color: #f8f406;
+	
+}
+#nav li a:hover{
+	transition: 400ms;
+	color: black;
+	font-weight: bold;
+	
+	
+}
+/*---------------------*/
+
+/*phan article */
+#article{
+	float: left;
+	color: whitesmoke;
+	height: 700px;
+	
+	width: 70%;
+	background-color: rgb(54, 54, 54);
+}
+#inside{
+	border-bottom: 2px solid yellow;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+}
+#inside p{
+	background-color: yellow;
+	width: fit-content;
+	text-transform: uppercase;
+	font-size: 4em;
+	padding: 0px 8px;
+	color: black;
+	font: 800 46px/53px Roboto, serif;
+	transform: skew(-20deg);
+}
+#inside p:hover{
+	color: gray
+}
+#form {
+	margin: 0;
+	padding: 0;
+}
+
+.in-form{
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+	
+.in-label, .input, .textarea, .submit{
+	display: block;
+	padding: 14px 10px;
+	width: 400px;
+	margin: 10px auto;
+  	text-align: center;
+  	border-radius: 20px;
+  	transition: 0.25s;
+  	background: none;
+  	
+}
+.in-label:focus, .input:focus, .textarea:focus{
+	width: 600px;
+	text-align: justify;
+	border:3px solid green;
+	border-radius: 0;
+	background-color: rgb(54, 54, 54);
+}
+.input, .textarea{
+	border:3px solid yellow;
+}
+.in-label{
+	font-variant: small-caps;
+	font-size: 25px;
+	color: yellow;
+	letter-spacing: 2px;
+	opacity: .8;
+}
+.submit{
+	text-align: center;
+	border: 2px solid yellow;
+	width: 100px;
+	color: yellow;
+	
+	font-size: larger;
+}
+.submit:hover{
+	color: black;
+	font-weight: bold;
+	background-image: linear-gradient(#00d2d3, #c8d6e5, #48dbfb);
+	box-shadow: 0 0 30px cyan;
+}
+/*---------------------*/
+/*phan footer */
+
+#footer{
+	color: white;
+	
+}
+.footer2{
+	width: 398px;
+	float: left;
+	
+}
+.footer2 p{
+	opacity: 0.5;
+	margin-left: 10px;
+}
+.footer2 a{
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 5px;
+	background-color:rgb(128, 128, 128);
+	border: 1px solid rgb(92, 92, 92);
+	text-align: center;
+	font-variant: small-caps;
+	color:white;
+}
+
+.footer2 a:hover{
+	color: rgba(236, 122, 28, 0.952);
+	transition: .5s;
+}
+#footer2{
+	height: 30px;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5	;
+	border-radius: 10px;
+	background-color: rgb(153, 216, 245);
+	color: grey;
+}
+#footer2 p{
+	text-align: center;
+	font-variant: small-caps;
+	font-size: larger;
+}

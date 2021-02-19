@@ -1,0 +1,250 @@
+*{
+	
+	box-sizing: border-box;
+	text-align: justify;
+	font-family: Roboto, sans-serif;
+	outline: none;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: #181818;
+	margin: 0;
+	padding: 0;
+    justify-content: ;
+    
+}
+
+#wrapper{
+	position: relative;
+	left: 4%;
+	margin: auto;
+	padding: auto;
+	max-width: 1200px;
+	height: 1200px;
+	
+	
+}
+/*kich thuoc cac phan */
+#header{
+	float: none;
+	text-align: center;
+	height: 150px;
+	
+}
+
+#nav{
+	height: 50px;
+	
+	
+}
+
+#content{
+    height: 700px;
+    width: 100%;
+
+}
+
+#footer{
+	height: 292px;
+
+}
+/*---------------------*/
+/*header */
+	#header img{
+		
+		max-width: 100%;
+	}
+
+/*---------------------*/
+
+/*menu*/
+#nav ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	letter-spacing: 3px;
+}
+#nav li {
+	transition: 400ms;
+	transform: skew(-20deg);
+	
+}
+
+#nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	transform: skew(20deg);
+	color: white;
+	line-height: 10px;
+	
+	
+}
+
+#nav li:hover{
+	transition: 400ms;
+	background-color: #f8f406;
+	
+}
+#nav li a:hover{
+	transition: 400ms;
+	color: black;
+	font-weight: bold;
+	
+	
+}
+/*---------------------*/
+
+/*phan content */
+
+#content hr{
+    clear: both;
+    
+}
+#content{
+    overflow: scroll;
+}
+#Tintuc1 {
+	height: 100px;
+}
+#Tintuc1 img{
+	position: relative;
+    width: 25%;
+    height: 300px;
+	float: left;
+	margin: 5px;
+	margin-right: 20px;
+	border-radius: 20px;
+}
+
+#Tintuc1>a{
+	position: relative;
+	top: 10px;
+	text-decoration: none;
+	color: black;
+	font-variant: small-caps;
+	border: 3px thick black ;
+	background-color: yellow;
+	border-radius: 20px;
+	padding: 5px;
+}
+#Tintuc1>a:hover{
+	background-color: burlywood;
+	font-size: 20px;
+	transition: 400ms;
+	color: rgb(226, 15, 198);
+}
+
+#Tintuc1>button>a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 8px;
+	color: yellow;
+	
+}
+#Tintuc1>button>a:hover{
+	color: cornflowerblue;
+}
+#Tintuc1 button{
+	border: 2px solid yellow;
+	border-radius: 20px;
+	padding: 5px;
+	background-color: rgb(54, 54, 54);
+}
+#Tintuc1 button:hover{
+	box-shadow:  0 4px 10px white ;
+	border-color: cornflowerblue;
+	
+}
+
+#Tintuc1 p{
+	font:14px/24px Open Sans, sans-serif;
+    color: white;
+    opacity: .8;
+    overflow: hidden;
+}
+#Tintuc1 h1 a{
+	text-decoration: none;
+	color: white;
+
+
+}
+#Tintuc1 h1 a:hover{
+	color: yellow;
+	
+}
+    /*phan content-inside */
+   #content-inside{
+       border-bottom: 2px solid yellow;
+       height: 50px;
+       padding: 0;
+       margin: 0;
+       
+   }
+   #content-inside p{
+       background-color: yellow;
+       width: fit-content;
+       text-transform: uppercase;
+       font-size: 4em;
+       padding: 0px 8px;
+       color: black;
+       font: 800 46px/53px Roboto, serif;
+       transform: skew(-20deg);
+   }
+   #content-inside p:hover{
+       color: gray
+   }
+
+  /*---------------------*/
+/*phan footer */
+
+#footer{
+	color: white;
+	
+}
+.footer2{
+	width: 398px;
+	float: left;
+	
+}
+.footer2 p{
+	opacity: 0.5;
+	margin-left: 10px;
+}
+.footer2 a{
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 5px;
+	background-color:rgb(128, 128, 128);
+	border: 1px solid rgb(92, 92, 92);
+	text-align: center;
+	font-variant: small-caps;
+	color:white;
+}
+
+.footer2 a:hover{
+	color: rgba(236, 122, 28, 0.952);
+	transition: .5s;
+}
+#footer2{
+	height: 30px;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5	;
+	border-radius: 10px;
+	background-color: rgb(153, 216, 245);
+	color: grey;
+}
+#footer2 p{
+	text-align: center;
+	font-variant: small-caps;
+	font-size: larger;
+}

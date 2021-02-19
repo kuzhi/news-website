@@ -1,0 +1,253 @@
+*{
+	
+	box-sizing: border-box;
+	text-align: justify;
+	font-family: Roboto, sans-serif;
+	outline: none;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: #181818;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#wrapper{
+	position: relative;
+	left: 4%;
+	margin: auto;
+	padding: auto;
+	max-width: 1200px;
+	height: 1200px;
+	
+	
+}
+/*kich thuoc cac phan */
+#header{
+	float: none;
+	text-align: center;
+	height: 150px;
+	max-width: 100%;
+	
+}
+
+#nav{
+	height: 50px;
+	max-width: 100%;
+	
+	
+}
+
+#content{
+	height: 700px;
+	max-width: 100%;
+
+}
+
+#footer{
+	height: 292px;
+	max-width: 100%;
+
+}
+/*---------------------*/
+/*header */
+	#header img{
+		
+		max-width: 100%;
+	}
+
+/*---------------------*/
+
+/*menu*/
+#nav ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	letter-spacing: 3px;
+}
+#nav li {
+	transition: 400ms;
+	transform: skew(-20deg);
+
+}
+
+
+
+#nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	transform: skew(20deg);
+	color: white;
+	line-height: 10px;
+	
+	
+}
+
+
+#nav li:hover{
+	transition: 400ms;
+	background-color: #f8f406;
+	
+}
+#nav li a:hover{
+	transition: 400ms;
+	color: black;
+	font-weight: bold;
+	
+	
+}
+/*---------------------*/
+
+/*phan content */
+
+.hop-ben-ngoai{
+	width: 1150px;
+	height: 290px;
+	position: absolute;
+	top: 25%;
+	left: 4%;
+	
+}
+.hop-ben-trong{
+	position: relative;
+	width: 270px;
+	height: 290px;
+	border: 3px solid yellow;
+	float: left;
+	margin: 5px;
+	margin-left: 5px;
+    border-bottom-right-radius:  20px;
+    border-bottom-left-radius: 20px;
+    background-color: cyan;
+}
+
+.hinh{
+	position: relative;	
+	top: 0.1%;
+	
+	
+}
+.hinh img{
+	width: 270px;
+	height: 220px;
+}
+.ten{
+	position: relative;
+    font-size: 30px;
+    font-family: impact;
+	bottom: 2%;
+	left: 10%;
+	margin: 3px;
+    color: orange;
+    text-transform: uppercase;
+
+}
+.hop-ben-trong:hover{
+	box-shadow: 10px 1px 20px  cyan;
+	background-color:#9b59b6;
+}
+.ten:hover{
+	color:#2ecc71;
+	text-shadow: 10px 1px 20px  cyan;
+}
+
+#photo{
+	border-bottom: 2px solid yellow;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+}
+#photo p{
+	background-color: yellow;
+	width: fit-content;
+	text-transform: uppercase;
+	font-size: 4em;
+	padding: 0px 8px;
+	color: black;
+	font: 800 46px/53px Roboto, serif;
+	transform: skew(-20deg);
+}
+#photo p:hover{
+	color: gray
+}
+
+/*phan 2 */
+.hop-ben-ngoai-2{
+	width: 1150px;
+	height: 290px;
+	position: absolute;
+	top: 50%;
+	left: 4%;
+	
+}
+.hop-ben-trong-2{
+	position: relative;
+	width: 270px;
+	height: 290px;
+	border: 3px solid yellow;
+	float: left;
+	margin: 5px;
+	margin-left: 5px;
+    border-bottom-right-radius:  20px;
+    border-bottom-left-radius: 20px;
+    background-color: cyan;
+}
+.hop-ben-trong-2:hover{
+	box-shadow: 10px 1px 20px  cyan;
+	background-color:#9b59b6;
+}
+/*---------------------*/
+/*phan footer */
+
+#footer{
+	color: white;
+	
+}
+.footer2{
+	width: 398px;
+	float: left;
+	
+}
+.footer2 p{
+	opacity: 0.5;
+	margin-left: 10px;
+}
+.footer2 a{
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 5px;
+	background-color:rgb(128, 128, 128);
+	border: 1px solid rgb(92, 92, 92);
+	text-align: center;
+	font-variant: small-caps;
+	color:white;
+}
+
+.footer2 a:hover{
+	color: rgba(236, 122, 28, 0.952);
+	transition: .5s;
+}
+#footer2{
+	height: 30px;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5	;
+	border-radius: 10px;
+	background-color: rgb(153, 216, 245);
+	color: grey;
+}
+#footer2 p{
+	text-align: center;
+	font-variant: small-caps;
+	font-size: larger;
+}
