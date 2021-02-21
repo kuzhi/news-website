@@ -1,3 +1,13 @@
+
+@media screen and (max-width: 500px){
+	.MenuDes{
+		display: none;
+	}
+	.MenuMedi{
+		display: block;
+	}
+}
+
 *{
 	
 	box-sizing: border-box;
