@@ -1,12 +1,4 @@
 
-@media screen and (max-width: 500px){
-	.MenuDes{
-		display: none;
-	}
-	.MenuMedi{
-		display: block;
-	}
-}
 
 *{
 	
@@ -15,9 +7,7 @@
 	font-family: Roboto, sans-serif;
 	outline: none;
 }
-*, *::before, *::after{
-	box-sizing: inherit;
-}
+
 body{
 	background-color: #181818;
 	margin: 0;
@@ -32,11 +22,13 @@ body{
 	padding: auto;
 	max-width: 1200px;
 	height: 1200px;
+	overflow: hidden;
 	
 	
 }
 /*kich thuoc cac phan */
 #header{
+	position: static;
 	float: none;
 	text-align: center;
 	height: 150px;
@@ -45,19 +37,25 @@ body{
 }
 
 #nav{
+	position: fixed;
 	height: 50px;
-	
-	
+	z-index: 1;
+	background-color: rgba(24,24,24);
+	left: 30vw;
 	
 }
 
 #content{
+	position: absolute;
+	top: 210px;
 	height: 700px;
 	
 
 }
 
 #footer{
+	bottom: 8px;
+	position: absolute;
 	height: 292px;
 	
 
@@ -72,7 +70,10 @@ body{
 /*---------------------*/
 
 /*menu*/
-#nav ul {
+.MenuDes{
+
+}
+.MenuDes ul {
 	position: relative;
 	display: flex;
 	list-style-type: none;
@@ -80,16 +81,20 @@ body{
 	margin: 0;
 	justify-content: center;
 	letter-spacing: 3px;
+	border:none;
+	transform: 
+	
 }
-#nav li {
+.MenuDes li {
 	transition: 400ms;
 	transform: skew(-20deg);
+	border-left: 2px solid #181818;
+	background-color: #181818;
 
 }
 
 
-
-#nav li a {
+.MenuDes li a {
 	display: block;
 	text-decoration: none;
 	padding: 20px 20px;
@@ -97,17 +102,20 @@ body{
 	transform: skew(20deg);
 	color: white;
 	line-height: 10px;
-	
+	border:none;
+	overflow: hidden;
+
+
 	
 }
 
 
-#nav li:hover{
+.MenuDes  li:hover{
 	transition: 400ms;
 	background-color: #f8f406;
 	
 }
-#nav li a:hover{
+.MenuDes li a:hover{
 	transition: 400ms;
 	color: black;
 	font-weight: bold;
@@ -118,6 +126,7 @@ body{
 
 /*phan article */
 #article{
+	position: relative;
 	float: left;
 	color: whitesmoke;
 	height: 700px;
@@ -131,6 +140,8 @@ body{
 	clear: both;
 }
 #Tintuc1 {
+
+	position: relative;
 	height: 100px;
 }
 #Tintuc1 img{
@@ -183,6 +194,7 @@ body{
 }
 
 #Tintuc1 p{
+	text-align: justify;
 	font:14px/24px Open Sans, sans-serif;
 	opacity: 0.5;
 }
@@ -338,4 +350,24 @@ body{
 	text-align: center;
 	font-variant: small-caps;
 	font-size: larger;
+}
+
+.MenuMedi{
+	display: none;
+}
+@media screen and (max-width: 900px){
+	#nav{
+	position: absolute;
+	height: 50px;
+	z-index: 1;
+	background-color: rgba(24,24,24);
+	left: 14vw;
+	
+}
+	.MenuDes {
+		display: none;
+	}
+	.MenuMedi {
+		display: block;
+	}
 }
