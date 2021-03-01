@@ -28,26 +28,36 @@ body{
 }
 /*kich thuoc cac phan */
 #header{
+	position: static;
 	float: none;
 	text-align: center;
 	height: 150px;
 	
+	
 }
 
 #nav{
+	position: fixed;
 	height: 50px;
-	
+	z-index: 1;
+	background-color: rgba(24,24,24);
+	left: 14vw;
 	
 }
 
 #content{
-    height: 700px;
-    width: 100%;
+	position: absolute;
+	top: 210px;
+	height: 700px;
+	
 
 }
 
 #footer{
+	bottom: 8px;
+	position: absolute;
 	height: 292px;
+	
 
 }
 /*---------------------*/
@@ -107,9 +117,7 @@ body{
     clear: both;
     
 }
-#content{
-    overflow: scroll;
-}
+
 #Tintuc1 {
 	height: 100px;
 }
