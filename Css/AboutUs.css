@@ -143,18 +143,33 @@ body{
        margin: 0;
    }
    #content-inside p{
-       background-color: yellow;
-       width: fit-content;
-       text-transform: uppercase;
-       font-size: 4em;
-       padding: 0px 8px;
-       color: black;
-       font: 800 46px/53px Roboto, serif;
-       transform: skew(-20deg);
+	   transition: 400ms;
+	   transform: skew(-20deg);
    }
-   #content-inside p:hover{
-       color: gray
-   }
+   #content-inside a{
+	background-color: yellow;
+	width: fit-content;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 4em;
+	padding: 0px 8px;
+	color: black;
+	font: 800 46px/53px Roboto, serif;
+	transition: 400ms;
+	transform: skew(20deg)
+}
+   
+   
+  #content-inside p:hover{
+	transition: 400ms;
+	
+	
+}
+#content-inside p a:hover{
+	transition: 400ms;
+	color: gray;
+	font-weight: bold;
+	
     /*---------------------*/
 /*phan class h1 va p2 */
    .H1{
