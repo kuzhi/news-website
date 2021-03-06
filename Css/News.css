@@ -37,11 +37,11 @@ body{
 }
 
 #nav{
-	position: fixed;
+	position: absolute;
 	height: 50px;
 	z-index: 1;
 	background-color: rgba(24,24,24);
-	left: 14vw;
+	left: 25%;
 	
 }
 
@@ -54,7 +54,7 @@ body{
 }
 
 #footer{
-	bottom: 8px;
+	bottom: -30%;
 	position: absolute;
 	height: 292px;
 	
@@ -120,6 +120,7 @@ body{
 
 #Tintuc1 {
 	height: 100px;
+	overflow: visible;
 }
 #Tintuc1 img{
 	position: relative;

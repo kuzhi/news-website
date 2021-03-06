@@ -97,9 +97,9 @@ body{
 	transition: 400ms;
 	color: black;
 	font-weight: bold;
-	
-	
 }
+
+
 /*---------------------*/
 #content{
 	
@@ -126,3 +126,6 @@ body{
 	opacity: .6;
 }
 /*---------------------*/
+.fb-like{
+	margin-left: 0%;
+}

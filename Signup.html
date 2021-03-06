@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="Images\logotitle.png">
+    <link rel="stylesheet" href="Css/Signup.css">
+    <title>Signup-GameOn!</title>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h1>
+                Đăng ký thành viên
+            </h1>
+            <fieldset class="fieldset">
+                <legend>
+                    Thông tin cá nhân
+                </legend>
+                <div class="control-info">
+                    <label><span style="color: #ff184c;">*</span>Họ và tên :</label>
+                    <input type="text" name="HoTen" placeholder="Họ và tên">
+                </div>
+                <div class="control-info">
+                    
+                    <label for="GT"><span style="color: #ff184c;">*</span>Giới tính:</label>
+
+                        <select id="GT">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Bí mật">Bí mật</option>
+                        
+                        </select>
+                   
+                    
+                </div>
+
+                <div class="control-date">
+                    <label for="birthday">Ngày sinh:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+
+                <div class="control-info">
+                    <label><span style="color: #ff184c;">*</span>EMail:</label>
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>    
+            </fieldset>
+             
+            <fieldset class="fieldset">
+                <legend>
+                    Mật khẩu
+                </legend>
+                <div class="control-info">
+                    <label><span style="color: #ff184c;">*</span>Mật khẩu</label>
+                    <input type="password" name="MK" placeholder="Mật khẩu">
+                </div>
+                <div class="control-info">
+                    <label><span style="color: #ff184c;">*</span>Nhập lại:</label>
+                    <input type="password" name="password" placeholder="Nhập lại">
+                </div>    
+            </fieldset>
+            <h2>
+                Đăng ký nhận tin
+            </h2>
+            <div class="control-yes">
+                <label> Theo dõi:</label>
+                <input type="radio" name="yesN">
+                <label>Có</label>
+                <input type="radio" name="yesN">
+                <label>Không</label>
+
+            </div>
+
+            <div class="control-Si">
+                <input type="submit" value="Sign up">
+                <input type="reset" value="Reset">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
