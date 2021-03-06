@@ -1,52 +1,255 @@
+
+
+
+
 *{
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    
-}
-body{
-   
-    
-    width: 100%;
-  
-    
-}
-.wrapper{
-    position: relative;
     justify-content: center;
-    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
 }
-.tittle h1{
-   text-align: center;
-   color: #de004e;
+
+body{
+    background-color: #181818;
+    
 }
-.table{
+/*kích thước web */
+#wrapper{
+    
+    max-width: 80%;
+    position: relative; 
+    margin: auto;
+	padding: auto;
+    height: 1200px;
+	overflow: hidden;
+}
+
+#header{ 
     position: absolute;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    
+    
+    
+    
+}
+
+#nav{
+    top: 9.9em;
+    position: fixed;
+    height: 50px;
+    width: 78.9%;
+    z-index: 1;
+    
+
+	
+}
+
+#content{
+    top: 12.5em;
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    background-image: url(../Images/vcs.png);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+#footer{
+    position: absolute;
+    top: 57em;
+    height: 300px;
+    width: 75%;
+    left: 10vw;
+}
+/*----------------- */
+/*header */
+#header img{
     width: fit-content;
-    left: 20%;    
-    
-    box-shadow:7px 7px 60px #000;
-    
 }
-.table table{
-    border-collapse: collapse;
-    
+.account{
+    position: absolute;
+    right: 0%;
+    width: 180px;
+    height: 35px;
+    background: #005678;
+    border: 1px solid ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: -3px 2px 10px 3px  white;
 }
-.table tr, th, td {
-    border: 1px solid #e96d5e;
+.account a{
+    padding: 8px 8px;
+    text-decoration: none;
+    color: #65dc98;
+    font-variant: small-caps;
+    font-size: larger;
+}
 
-    font-weight: bold;
-    padding: 8px ;
-    text-align: center;
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-    color: #6287f8;
+.account a:hover{
+    color: rgba(24,24,24);
 }
-.table th{
-    background-color: #6a7e6a;
+
+/*-----------------*/
+
+/*nav*/
+
+.MenuDes ul {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	letter-spacing: 3px;
+	border:none;
+	transform: 
+	
+}
+.MenuDes li {
+	transition: 400ms;
+	transform: skew(-20deg);
+	border-left: 2px solid #181818;
+	background-color: #181818;
+
+}
+
+
+.MenuDes li a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	transform: skew(20deg);
+	color: white;
+	line-height: 10px;
+	border:none;
+	overflow: hidden;
+
+
+	
+}
+
+
+.MenuDes  li:hover{
+	transition: 400ms;
+	background-color: #f8f406;
+	
+}
+.MenuDes li a:hover{
+	transition: 400ms;
+	color: black;
+	font-weight: bold;
+	
+	
+}
+.MenuDes>ul>li{
+    position: relative;
+}
+.MenuDes ul ul{
+    position:absolute;
+    left: 2%;
+    display:none;
+    padding: 0;
+    margin: 0;
+}
+.MenuDes ul ul li {
+    transform: none;
+    display: block;
+    border-top:  1px solid white; 
+    padding: 10px 15px;
+
+}
+.MenuDes ul ul li a{
+    transform: none;
+    display: block;
+     
+    
+
+}
+.MenuDes>ul>li:hover>ul{
+    display: block;
+
+}
+
+/*-----------------*/
+/*content*/
+
+
+.tittle h1{
+    position: absolute;
+    left: 10%;
+    color: #de004e;
+    
+ }
+ .table{
+     position: absolute;
+     width: fit-content;
+     top: 12%;
+     left: 20%;    
+     
+     
+     background-color: #73fffe;
+ }
+ .table table{
+     border-collapse: collapse;
+     
+ }
+ .table tr, th, td {
+     border: 1px solid #e96d5e;
+ 
+     font-weight: bold;
+     padding: 8px ;
+     text-align: center;
+     font-size: 1.2rem;
+     letter-spacing: .1rem;
+     color: #6287f8;
+ }
+ .table th{
+     background-color: #6a7e6a;
+     color: white;
+ }
+ .table td:hover, th:hover{
+     background-color: #73fffe;
+ }
+
+/*-----------------*/
+/*footer*/
+
+#footer {
+    display: flex;
     color: white;
-}
-.table td:hover, th:hover{
-    background-color: #73fffe;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
 }
 
+.footer2{
+    width: 40%;
+    text-align: justify;
+}
+.footer2 p{
+	opacity: 0.5;
+}
+.footer2 a{
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 5px;
+	background-color:rgb(128, 128, 128);
+	border: 1px solid rgb(92, 92, 92);
+	text-align: center;
+	font-variant: small-caps;
+	color:white;
+}
+.footer2>p{
+    padding-left: 10px;
+
+}
+.footer2 a:hover{
+	color: rgba(236, 122, 28, 0.952);
+	transition: .5s;
+}
 

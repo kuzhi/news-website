@@ -38,17 +38,17 @@ body{
 #nav{
 
     position: fixed;
-	
     height: 50px;
     width: 78.9%;
     z-index: 1;
-   
+    
 }
 
 #content{
 	position: absolute;
 	top: 17%;
 	max-width: 100%;
+    
 	
 
 }
@@ -85,7 +85,6 @@ body{
 /*menu*/
 #nav ul {
 	position: relative;
-	
 	display: flex;
 	list-style-type: none;
 	padding: 0;
@@ -127,7 +126,6 @@ body{
 
 #nav>ul>li{
     position: relative;
-	
 }
 #nav ul ul{
     position:absolute;
@@ -182,11 +180,15 @@ body{
 	color: white;
 	opacity: .6;
 }
-/*---------------------*/
-.fb-like{
+#content iframe{
 	
-	margin-left: 0%;
+	
+	width: 800px;
+	height: 700px;
+	
 }
+/*---------------------*/
+
 .fb-comments{
 	background-color: whitesmoke;
 }

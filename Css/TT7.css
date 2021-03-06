@@ -38,11 +38,10 @@ body{
 #nav{
 
     position: fixed;
-	
     height: 50px;
     width: 78.9%;
     z-index: 1;
-   
+    
 }
 
 #content{
@@ -85,7 +84,6 @@ body{
 /*menu*/
 #nav ul {
 	position: relative;
-	
 	display: flex;
 	list-style-type: none;
 	padding: 0;
@@ -127,7 +125,6 @@ body{
 
 #nav>ul>li{
     position: relative;
-	
 }
 #nav ul ul{
     position:absolute;
@@ -182,11 +179,46 @@ body{
 	color: white;
 	opacity: .6;
 }
+
 /*---------------------*/
+.framework{
+    position: relative;
+    left:20%;
+}
+.frame iframe{
+    width: 700px;
+    height: 500px;
+}
+#ahref a{
+    
+    text-decoration: none;
+   
+    
+} 
+#ahref a p{
+    margin: 10px 300px;
+    font-size: 30px;
+    text-indent: 0px;
+    
+    padding: 8px 8px;
+    border: 2px solid black;
+    width: 100px;
+    color: crimson ;
+    outline: none;
+    border-radius: 20px;   
+    background-color: deepskyblue;
+}
+#ahref a p:hover{
+    box-shadow: 0 2px 10px 5px white;
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
 .fb-like{
 	
-	margin-left: 0%;
+	margin-left: 2%;
 }
 .fb-comments{
 	background-color: whitesmoke;
+    
 }
+
