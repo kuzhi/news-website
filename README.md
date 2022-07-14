@@ -1,2 +1,2 @@
 # github-assignment-web
-A website project
+Website về tin tức
